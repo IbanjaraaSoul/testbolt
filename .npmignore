@@ -1,0 +1,60 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Test files
+poc-examples/
+examples/
+*.test.ts
+*.spec.ts
+jest.config.js
+
+# Development files
+.git/
+.gitignore
+.idea/
+.vscode/
+.DS_Store
+*.log
+
+# Build artifacts (keep dist/)
+*.map
+!dist/**/*.map
+
+# Documentation (keep main README)
+ARCHITECTURE*.md
+COMPATIBILITY*.md
+IMPLEMENTATION*.md
+PAIN_POINTS*.md
+POC*.md
+REAL_DEVICE*.md
+HEADED_MODE*.md
+QUICKSTART.md
+
+# Sample apps
+SampleApp/
+
+# Test outputs
+screenshots/
+videos/
+coverage/
+temp/
+
+# App files
+*.apk
+*.ipa
+
+# Setup scripts
+poc-setup.sh
+
+# Node modules (will be installed by users)
+node_modules/
+
+# Config files
+tsconfig.json
+.eslintrc*
+
+# Lock files (optional - some prefer to include)
+# package-lock.json
+

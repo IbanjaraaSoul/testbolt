@@ -1,0 +1,71 @@
+{
+  "name": "testbolt-mobile",
+  "version": "1.0.0",
+  "description": "TestBolt - Lightning-fast mobile automation framework with AI-powered element detection",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "testbolt": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "init": "node dist/cli/init.js"
+  },
+  "keywords": [
+    "mobile",
+    "automation",
+    "testing",
+    "appium",
+    "android",
+    "ios",
+    "mobile-testing",
+    "e2e",
+    "test-automation",
+    "webdriverio",
+    "mobile-automation-framework"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/testbolt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/testbolt/issues"
+  },
+  "homepage": "https://github.com/yourusername/mobileauto#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "QUICKSTART.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "@wdio/cli": "^8.0.0",
+    "webdriverio": "^8.0.0",
+    "sharp": "^0.32.0",
+    "axios": "^1.6.0",
+    "commander": "^11.0.0",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/jest": "^29.5.0",
+    "typescript": "^5.3.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.50.0"
+  }
+}
+
