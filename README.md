@@ -1,6 +1,14 @@
 # TestBolt - Lightning-Fast Mobile Automation Framework
 
+[![npm version](https://img.shields.io/npm/v/testbolt-mobile.svg)](https://www.npmjs.com/package/testbolt-mobile)
+[![npm downloads](https://img.shields.io/npm/dm/testbolt-mobile.svg)](https://www.npmjs.com/package/testbolt-mobile)
+[![GitHub stars](https://img.shields.io/github/stars/IbanjaraaSoul/testbolt.svg)](https://github.com/IbanjaraaSoul/testbolt)
+[![GitHub issues](https://img.shields.io/github/issues/IbanjaraaSoul/testbolt.svg)](https://github.com/IbanjaraaSoul/testbolt/issues)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A modern mobile automation framework designed to overcome the common pain points of existing tools.
+
+**📦 [Install from npm](https://www.npmjs.com/package/testbolt-mobile)** | **⭐ [Star on GitHub](https://github.com/IbanjaraaSoul/testbolt)** | **🐛 [Report Issues](https://github.com/IbanjaraaSoul/testbolt/issues)**
 
 ## Architecture
 
@@ -83,10 +91,13 @@ mobileAuto/
 
 ```bash
 # Install
-npm install -g testbolt
+npm install testbolt-mobile
+
+# Or install globally
+npm install -g testbolt-mobile
 
 # Initialize project
-mobileauto init
+testbolt init
 
 # Run tests
 testbolt test
@@ -124,7 +135,7 @@ See [APP_COMPATIBILITY.md](./APP_COMPATIBILITY.md) for detailed compatibility in
 ## Example Test
 
 ```typescript
-import { MobileAuto, Device } from 'mobileauto';
+import { MobileAuto } from 'testbolt-mobile';
 
 const app = new MobileAuto({
   device: 'cloud:iPhone-14-Pro',
@@ -148,4 +159,38 @@ test('Login Flow', async () => {
   await app.expect(app.find('Dashboard')).toBeVisible();
 });
 ```
+
+## Installation
+
+```bash
+npm install testbolt-mobile
+```
+
+Or install globally:
+```bash
+npm install -g testbolt-mobile
+```
+
+## Links
+
+- 📦 **npm Package**: [testbolt-mobile](https://www.npmjs.com/package/testbolt-mobile)
+- ⭐ **GitHub Repository**: [IbanjaraaSoul/testbolt](https://github.com/IbanjaraaSoul/testbolt)
+- 🐛 **Report Issues**: [GitHub Issues](https://github.com/IbanjaraaSoul/testbolt/issues)
+- 📖 **Documentation**: See [QUICKSTART.md](./QUICKSTART.md)
+
+## License
+
+MIT License - see [LICENSE](./LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+For more details, visit our [GitHub repository](https://github.com/IbanjaraaSoul/testbolt).
 
